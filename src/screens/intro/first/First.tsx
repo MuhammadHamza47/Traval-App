@@ -7,6 +7,7 @@ import StartBtn from '../../../components/startBtn/StartBtn'
 export default function First() {
   return (
     < >
+    <View style={{flex:1}}>
     <View style={styles.header} ></View>
     <View style={styles.container1} >
         <Image style={styles.img} source={require('../../../assets/intro1.png')} />
@@ -19,6 +20,7 @@ export default function First() {
     <View style={styles.footer} >
         {/* <Text style={{marginTop: 40}}>Nordic Vacation Sponsor</Text> */}
         <LastText />
+    </View>
     </View>
     </>
   )
