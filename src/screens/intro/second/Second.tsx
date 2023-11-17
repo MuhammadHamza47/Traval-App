@@ -19,6 +19,7 @@ export default function Second() {
       <View style={styles.container2}>
         <Heading title="Customize your High-end travel" />
         <Paragraph Text="Countless high-end entertainment facilities" />
+        {/* Button Component */}
         <StartBtn />
       </View>
       <View style={styles.footer}>
