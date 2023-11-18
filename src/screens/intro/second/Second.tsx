@@ -23,6 +23,7 @@ export default function Second() {
         <StartBtn />
       </View>
       <View style={styles.footer}>
+      {/* Last Text */}
         <LastText />
       </View>
       </View>
