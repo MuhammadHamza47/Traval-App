@@ -4,7 +4,11 @@ import { StyleSheet } from 'react-native'
 import { Heading, Paragraph, LastText } from '../../../components/startText/Text'
 import StartBtn from '../../../components/startBtn/StartBtn'
 
-export default function First() {
+export default function First({ navigation } ) {
+
+  const onPressHandler = () => {
+    navigation.navigate('Second')
+  }
   return (
     < >
     <View style={{flex:1}}>
@@ -15,7 +19,7 @@ export default function First() {
     <View style={styles.container2} >
         <Heading title="Make your own private travel plan"/>
         <Paragraph Text="Formulate your strategy to receive wonderful gift packs" />
-        <StartBtn />
+        <StartBtn screen={onPressHandler}/>
     </View>
     <View style={styles.footer} >
         {/* <Text style={{marginTop: 40}}>Nordic Vacation Sponsor</Text> */}
