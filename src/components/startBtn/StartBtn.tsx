@@ -3,8 +3,8 @@ import { StyleSheet, TouchableOpacity, Image  } from 'react-native'
 
 export default function StartBtn(props: any) {
   return (
-    <TouchableOpacity onPress={props.screen} style={styles.buttonContainer}>
-      <Image source={require('../../assets/startbtn.png')} />
+    <TouchableOpacity onPress={props.onpress} style={styles.buttonContainer}>
+      <Image source={require('../../../assets/startbtn.png')} />
     </TouchableOpacity>
   )
 }
