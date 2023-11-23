@@ -6,23 +6,24 @@ import StartBtn from '../../../components/startBtn/StartBtn'
 
 export default function First({ navigation } ) {
 
-  const onPressHandler = () => {
-    navigation.navigate('Second')
-  }
+  // const onPressHandler = () => {
+  //   navigation.navigate('Second')
+  // }
   return (
     < >
     <View style={{flex:1}}>
-    <View style={styles.header} ></View>
+    {/* <View style={styles.header} ></View> */}
     <View style={styles.container1} >
         <Image style={styles.img} source={require('../../../assets/intro1.png')} />
     </View>
     <View style={styles.container2} >
         <Heading title="Make your own private travel plan"/>
         <Paragraph Text="Formulate your strategy to receive wonderful gift packs" />
-        <StartBtn screen={onPressHandler}/>
+
+        {/* <StartBtn onpress={onPressHandler} /> */}
     </View>
     <View style={styles.footer} >
-        {/* <Text style={{marginTop: 40}}>Nordic Vacation Sponsor</Text> */}
+        
         <LastText />
     </View>
     </View>
@@ -31,15 +32,16 @@ export default function First({ navigation } ) {
 }
 
 const styles = StyleSheet.create({
-  header: {
-    flex: 1,
-    backgroundColor: 'white',
-  },
+  // header: {
+  //   flex: 1,
+  //   backgroundColor: 'white',
+  // },
     container1: {
         flex: 4,
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: 'white',
+        paddingTop: 10
     },
     container2:{
         flex: 4,
@@ -48,7 +50,7 @@ const styles = StyleSheet.create({
         backgroundColor: 'white',
     },
     footer:{
-        flex: 2,
+        flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: 'white'
