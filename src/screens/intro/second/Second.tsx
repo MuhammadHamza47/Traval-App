@@ -24,10 +24,10 @@ export default function Second({ navigation }) {
         <Heading title="Customize your High-end travel" />
         <Paragraph Text="Countless high-end entertainment facilities" />
         {/* Button Component */}
-        <StartBtn screen= {onPressHandler} />
+        <StartBtn />
       </View>
       <View style={styles.footer}>
-      Last Text
+      {/* Last Text */}
         <LastText />
       </View>
       </View>

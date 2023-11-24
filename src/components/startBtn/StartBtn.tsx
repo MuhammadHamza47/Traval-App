@@ -1,10 +1,10 @@
 import React from 'react'
 import { StyleSheet, TouchableOpacity, Image  } from 'react-native'
 
-export default function StartBtn(props: any) {
+export default function StartBtn() {
   return (
-    <TouchableOpacity onPress={props.onpress} style={styles.buttonContainer}>
-      <Image source={require('../../../assets/startbtn.png')} />
+    <TouchableOpacity style={styles.buttonContainer}>
+      <Image source={require('../../assets/startbtn.png')} />
     </TouchableOpacity>
   )
 }

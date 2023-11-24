@@ -20,7 +20,7 @@ export default function First({ navigation } ) {
         <Heading title="Make your own private travel plan"/>
         <Paragraph Text="Formulate your strategy to receive wonderful gift packs" />
 
-        {/* <StartBtn onpress={onPressHandler} /> */}
+        <StartBtn/>
     </View>
     <View style={styles.footer} >
         
